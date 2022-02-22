@@ -51,7 +51,7 @@ class MainViewController: UICollectionViewController {
         let userAction = userActions[indexPath.item]
         
         switch userAction {
-        case .downloadImage: performSegue(withIdentifier: "showImag", sender: nil)
+        case .downloadImage: performSegue(withIdentifier: "showImage", sender: nil)
         case .exampleOne: exampleOneButtonPressed()
         case .exampleTwo: exampleTwoButtonPressed()
         case .exampleThree: exampleThreeButtonPressed()

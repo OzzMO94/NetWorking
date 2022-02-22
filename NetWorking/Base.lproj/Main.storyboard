@@ -200,8 +200,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="vcJ-kJ-TgG"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="iX1-xF-thR" id="QXy-WR-ZAQ"/>
-                        <outlet property="imageView" destination="Ddy-Kf-bCa" id="5mJ-Z1-79E"/>
+                        <outlet property="activityIndicator" destination="iX1-xF-thR" id="tWu-rK-7rW"/>
+                        <outlet property="imageView" destination="Ddy-Kf-bCa" id="Rw9-be-Q2S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvk-Dz-ysJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
