@@ -5,7 +5,7 @@
 //  Created by Максим Хабиров on 22.02.2022.
 //
 
-struct Course {
+struct Course: Decodable {
         
     let name: String
     let imageUrl: String

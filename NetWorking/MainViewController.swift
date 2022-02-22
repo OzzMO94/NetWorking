@@ -96,6 +96,17 @@ extension MainViewController {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
+            
+            do {
+                let course = try JSONDecoder().decode(Course.self, from: data)
+                self.succsessAlert()
+                print(course)
+            } catch let error {
+                self.faildAlert()
+                print(error.localizedDescription)
+            }
+            
+            
         }.resume()
     }
     
