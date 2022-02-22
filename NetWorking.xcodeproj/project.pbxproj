@@ -17,6 +17,7 @@
 		9465464F27C55BC00075879F /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465464E27C55BC00075879F /* ImageViewController.swift */; };
 		9465465127C55E250075879F /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465465027C55E250075879F /* CoursesViewController.swift */; };
 		9465465327C55F2F0075879F /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465465227C55F2F0075879F /* CourseCell.swift */; };
+		9465465527C57EC90075879F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9465465427C57EC90075879F /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9465464E27C55BC00075879F /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		9465465027C55E250075879F /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		9465465227C55F2F0075879F /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		9465465427C57EC90075879F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				9465465027C55E250075879F /* CoursesViewController.swift */,
 				9465464C27C542D90075879F /* UserActionCell.swift */,
 				9465465227C55F2F0075879F /* CourseCell.swift */,
+				9465465427C57EC90075879F /* Course.swift */,
 				9465463C27C5423A0075879F /* Main.storyboard */,
 				9465464127C5423B0075879F /* LaunchScreen.storyboard */,
 				9465463F27C5423B0075879F /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9465465527C57EC90075879F /* Course.swift in Sources */,
 				9465464D27C542D90075879F /* UserActionCell.swift in Sources */,
 				9465464B27C542890075879F /* MainViewController.swift in Sources */,
 				9465464F27C55BC00075879F /* ImageViewController.swift in Sources */,
