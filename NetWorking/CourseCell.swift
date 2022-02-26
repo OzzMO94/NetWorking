@@ -8,16 +8,15 @@
 import UIKit
 
 class CourseCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    @IBOutlet weak var courseImage: UIImageView!
+    @IBOutlet weak var courseNameLabel: UILabel!
+    @IBOutlet weak var numberOfLessonsLabel: UILabel!
+    @IBOutlet weak var numberOfTestsLabel: UILabel!
+    
+    func configur(with course: Course) {
+        courseNameLabel.text = course.name
+        numberOfLessonsLabel.text = "Number of lessons \(course.number_of_lessons ?? 0)"
+        numberOfTestsLabel.text = "Number of tests \(course.number_of_tests ?? 0)"
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

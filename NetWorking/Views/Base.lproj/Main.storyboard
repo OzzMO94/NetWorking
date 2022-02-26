@@ -97,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="dN8-Kw-XVY" customClass="CourseCell" customModule="Networking" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="dN8-Kw-XVY" customClass="CourseCell" customModule="NetWorking" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dN8-Kw-XVY" id="Lm8-xP-Jcn">
@@ -154,10 +154,12 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="courseImage" destination="dle-RF-TSe" id="68O-5W-fAU"/>
-                                    <outlet property="courseNameLabel" destination="0Ov-DL-NHM" id="sTV-LM-5ij"/>
+                                    <outlet property="courseImage" destination="dle-RF-TSe" id="PSt-1k-wUt"/>
+                                    <outlet property="courseNameLabel" destination="0Ov-DL-NHM" id="Rsa-iD-3ZP"/>
                                     <outlet property="numberOfLessons" destination="hQU-4e-EyZ" id="znC-uq-uci"/>
+                                    <outlet property="numberOfLessonsLabel" destination="hQU-4e-EyZ" id="OYC-F5-B4k"/>
                                     <outlet property="numberOfTests" destination="eaU-RH-Ras" id="LPn-Ae-gFP"/>
+                                    <outlet property="numberOfTestsLabel" destination="eaU-RH-Ras" id="qYs-E3-MNO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -27,6 +27,16 @@ enum UserActions: String, CaseIterable {
 class MainViewController: UICollectionViewController {
     
     private let userActions = UserActions.allCases
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCourses" {
+            let coursesVC = segue.destination as! CoursesViewController
+            coursesVC.fetchCourse()
+        }
+        
+    }
 
     // MARK: - UICollectionViewDataSource
 
@@ -81,10 +91,6 @@ class MainViewController: UICollectionViewController {
         }
     }
 }
-
-
-
-
 
 extension MainViewController {
     private func exampleOneButtonPressed() {
@@ -141,6 +147,16 @@ extension MainViewController {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
+            
+            do {
+                let websiteDescription = try JSONDecoder().decode(WebsiteDescription.self, from: data)
+                self.succsessAlert()
+                print(websiteDescription)
+            } catch let error {
+                self.faildAlert()
+                print(error.localizedDescription)
+            }
+            
         }.resume()
     }
     
@@ -153,10 +169,19 @@ extension MainViewController {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
+            
+            do {
+                let websiteDescription = try JSONDecoder().decode(WebsiteDescription.self, from: data)
+                self.succsessAlert()
+                print(websiteDescription)
+            } catch let error {
+                self.faildAlert()
+                print(error)
+            }
+            
         }.resume()
     }
 }
-
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     
