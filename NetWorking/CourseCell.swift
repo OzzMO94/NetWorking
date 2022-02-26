@@ -18,5 +18,14 @@ class CourseCell: UITableViewCell {
         courseNameLabel.text = course.name
         numberOfLessonsLabel.text = "Number of lessons \(course.number_of_lessons ?? 0)"
         numberOfTestsLabel.text = "Number of tests \(course.number_of_tests ?? 0)"
+        
+        guard let url = URL(string: course.imageUrl ?? "") else {return}
+        
+        DispatchQueue.global().async {
+            guard let imageData = try? Data(contentsOf: url) else {return}
+            DispatchQueue.main.async {
+                self.courseImage.image = UIImage(data: imageData)
+            }
+        }
     }
 }

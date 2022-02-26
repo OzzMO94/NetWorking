@@ -23,14 +23,14 @@ class CoursesViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "showCourses", for: indexPath) as! CourseCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CourseCell
         
-
+        let course = courses[indexPath.row]
+        cell.configur(with: course)
 
         return cell
     }
 }
-
 
 // MARK: - Networking
 
@@ -46,6 +46,9 @@ extension CoursesViewController {
             
             do {
                 self.courses = try JSONDecoder().decode([Course].self, from: data)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } catch let error {
                 print(error.localizedDescription)
             }
